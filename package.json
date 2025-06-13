@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "synpress": "synpress run",
-    "synpress:open": "synpress open"
+    "synpress:open": "synpress open",
+    "anvil": "anvil --load-state marketplace-anvil.json --block-time 2",
+    "reset-indexer": "cd marketplaceIndexer && docker-compose down && docker volume rm"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.7",
