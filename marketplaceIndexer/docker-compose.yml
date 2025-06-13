@@ -1,0 +1,16 @@
+volumes:
+  postgres_data:
+    driver: local
+
+# 它会启动一个postgresql数据库，该数据库会索引和跟踪合约所有发出的事件
+services:
+  postgresql:
+    image: postgres:16
+    shm_size: 1g
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5440:5432
+    env_file:
+      - ./.env
