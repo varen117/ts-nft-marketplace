@@ -20,7 +20,7 @@ contract NftMarketplace is ReentrancyGuard {
     error PriceMustBeAboveZero();
 
     /*//////////////////////////////////////////////////////////////
-                                 TYPES
+                                TYPES
     //////////////////////////////////////////////////////////////*/
     struct Listing {
         uint256 price;

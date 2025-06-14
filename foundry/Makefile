@@ -8,3 +8,8 @@ anvil:
 
 mint-usdc:
 	forge script script/MintUSDC.s.sol --rpc-url http://127.0.0.1:8545 --private-key ${ANVIL_KEY} --via-ir --broadcast -vvv
+
+install:; forge install foundry-rs/forge-std  && forge install OpenZeppelin/openzeppelin-contracts
+
+build:; forge build --via-ir
+
